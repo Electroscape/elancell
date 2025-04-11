@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elancell - For a better tomorrow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('landing_background.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+        
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 100px;
+            height: auto;
+        }
+        
+        .company-name {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            color: white;
+        }
+        
+        .company-name h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .company-name p {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        
+        .nav-buttons {
+            position: absolute;
+            top: 50%;
+            right: 50px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .nav-button {
+            padding: 20px 40px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+        
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: translateX(-10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <img src="elancell_schmetterling.png" alt="Elancell Logo" class="logo">
+    
+    <div class="company-name">
+        <h1>Elancell</h1>
+        <p>For a better tomorrow</p>
+    </div>
+    
+    <div class="nav-buttons">
+        <a href="#" class="nav-button">About Us</a>
+        <a href="#" class="nav-button">Join Our Team</a>
+        <a href="#" class="nav-button">Elancse</a>
+        <a href="#" class="nav-button">News/Press</a>
+    </div>
+</body>
+</html>
