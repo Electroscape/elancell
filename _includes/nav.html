@@ -1,0 +1,7 @@
+{% if page.nav_buttons %}
+<nav class="nav-column">
+    {% for button in page.nav_buttons %}
+    <a href="{{ button.url }}" class="nav-button {{ 'active-nav' if button.active }}"> {{ button.text }} </a>
+    {% endfor %}
+</nav>
+{% endif %}
